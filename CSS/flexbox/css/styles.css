@@ -1,0 +1,123 @@
+/* 공용 스타일 작성 시작*/
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f2f2f2;
+  
+}
+
+/* 공용 스타일 작성 끝*/
+
+/* Header 스타일 작성 시작*/
+.header{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    ;
+
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: blue;
+
+}
+
+.search input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    
+}
+.search button {
+    background-color: rgb(134, 126, 126);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Header 스타일 작성 끝*/
+
+/* 상품 스타일 작성 시작*/
+.container {
+  display: flex;
+  padding: 5%;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex: 3;
+}
+.book {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.book .price {
+ font-weight: bold;
+ margin-bottom: 10px;
+
+}
+
+.book button {
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* 상품 스타일 작성 끝*/
+
+
+
+/* 장바구니 스타일 작성 시작*/
+.market {
+  flex: 1;
+  background-color: white;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.market h2 {
+  font-size: 18px;
+   margin-bottom: 10px;
+}
+
+/* 장바구니 스타일 작성 끝*/
+
+
+/* 푸터 스타일 작성 시작*/
+footer {
+background-color: #222;
+color: white;
+text-align: center;
+padding: 10px;
+margin-top: 30px;
+}
+
+/* 푸터 스타일 작성 끝*/
+
