@@ -287,19 +287,18 @@
         console.log(filter(objArr, ele => ele.name.includes('성모2')));
 
         // map : 배열 내부의 요소를 원하는 요소로 변경
-        // const mapedArr =
-        // objArr.map(funtion(ele){
-        //     return{
-        //         newId : ele.id,
-        //         newName : ele.name
-        //     }
-
-        // });
-        // console.log(mapedArr);
-
+        const mappedArr =
+                objArr.map(function (ele) {
+                    return {
+                        newId: ele.id,
+                        newName: ele.name
+                    };
+                });
+            console.log(mappedArr);
+        };
 
         
-    };
+   
 
     function filter(arr ,func){
         // func의 실행결과가 true가 나오는 경우 , 해당요소를
