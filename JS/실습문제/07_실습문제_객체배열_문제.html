@@ -26,12 +26,16 @@
     function test1() {
       //1.객체배열 생성 및 요소추가
       var students = [
+        new student('김동현','90','56','56','44','34'),
+        new student('유관순','76','23','56','44','34'),
+        new student('임꺽정','100','56','50','32')
         
         
       ];
 
       //2.반복문을 통해 객체배열 순회. 요소별 toString메소드 호출하기
       for (var student of students) {
+        console.log(student.toString());
 
       }
       /* 

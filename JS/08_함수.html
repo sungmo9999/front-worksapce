@@ -139,38 +139,34 @@
             }
         }
 
-        function test6(){
-            // 리턴값으로 함수 반환하기
-
-            const hello =  returnFuntion('say');
-
+       function test6(){
+            let a = 1;
+            // 리턴값으로 함수를 반환하기
+            const hello = returnFunction('say');
+            
             const hello2 = function(name){
                 console.log('say'+' '+name);
             }
+
             hello('js');
 
             returnFunction('good bye')('js');
+            (function(name){
+                console.log('good bye'+' '+name);
+            })('js')
         }
 
         function returnFunction(say){
-             (function(name){
-                console.log(say+' '+name);
-            })
-        }
-            function returnFunction(say){
-             return function(name){
+            let b = 2;
+            return function(name){
                 console.log(say+' '+name);
             }
-
         }
-    
         //(soo())(999)
         function soo(){
             return function(n){
-                console.log(n)
-
+                console.log(n);
             }
-
         }
 
     </script>
